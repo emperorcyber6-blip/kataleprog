@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#811331;stop-opacity:1" /> <!-- Maroon / Burgundy placeholder -->
+      <stop offset="100%" style="stop-color:#C5A059;stop-opacity:1" /> <!-- Gold / Khaki placeholder -->
+    </linearGradient>
+  </defs>
+  <rect width="400" height="100" fill="transparent"/>
+  <text x="50%" y="55%" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="url(#grad)" text-anchor="middle" dominant-baseline="middle">KATALE PROGRESSIVE</text>
+  <text x="50%" y="85%" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#333" letter-spacing="2" text-anchor="middle">NURSERY &amp; PRIMARY SCHOOL</text>
+</svg>
