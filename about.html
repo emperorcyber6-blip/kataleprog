@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="About Katale Progressive Nursery and Primary School. Learn about our mission, dedicated teachers, and why we are the best choice in Nalumunye.">
+    <title>About Us - Katale Progressive</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-image::before {
+            content: '';
+            display: block;
+            padding-top: 75%;
+            /* 4:3 Aspect Ratio */
+        }
+
+        .about-image-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(129, 19, 49, 0.8), rgba(197, 160, 89, 0.8));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* List styling for Why Choose Us */
+        .why-choose-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .why-choose-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            background: var(--surface);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--secondary);
+            transition: transform var(--transition-fast);
+        }
+
+        .why-choose-list li:hover {
+            transform: translateX(10px);
+        }
+
+        .why-choose-icon {
+            color: var(--primary);
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .why-choose-text h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .why-choose-text p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        @media (max-width: 900px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="Katale Progressive Logo">
+            </a>
+
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="co-curricular.html">Co-Curricular</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container fade-up">
+            <h1 class="page-title">About Our School</h1>
+            <p class="page-subtitle">A growing private educational institution nurturing discipline, creativity, and
+                moral values in learners.</p>
+        </div>
+    </header>
+
+    <!-- Main About Section -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-up">
+                    <h2>Our Foundation</h2>
+                    <p>Katale Progressive Nursery and Primary School is a growing private educational institution
+                        offering both nursery and primary education in Jomayi Estate, Nalumunye, Kampala.</p>
+                    <p>We are committed to providing a strong academic foundation. With a highly supportive learning
+                        environment, the administration ensures that pupils receive personalized attention and guidance
+                        from our dedicated teachers.</p>
+                    <p>Our focus is not solely on academics, but on cultivating moral discipline and igniting the
+                        creative spark within every child, preparing them for the future with confidence.</p>
+                </div>
+                <div class="about-image fade-up delay-1">
+                    <div class="about-image-inner">
+                        Inspiring Minds, Building Character
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section" style="background-color: var(--background);">
+        <div class="container">
+            <h2 class="section-title fade-up">Why Choose Katale Progressive?</h2>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <ul class="why-choose-list">
+                    <li class="fade-up delay-1">
+                        <div class="why-choose-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <div class="why-choose-text">
+                            <h4>Strong Academic Performance</h4>
+                            <p>We boast a track record of commendable performance in national examinations, driven by a
+                                rigid curriculum and test preparation.</p>
+                        </div>
+                    </li>
+                    <li class="fade-up delay-2">
+                        <div class="why-choose-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="why-choose-text">
+                            <h4>Qualified and Caring Teachers</h4>
+                            <p>Our staff provides personalized attention, ensuring no pupil is left behind in their
+                                academic journey.</p>
+                        </div>
+                    </li>
+                    <li class="fade-up delay-3">
+                        <div class="why-choose-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="why-choose-text">
+                            <h4>Safe and Accessible Location</h4>
+                            <p>Located securely in Jomayi Estate, serving the Nalumunye community with an easily
+                                accessible, secure campus.</p>
+                        </div>
+                    </li>
+                    <li class="fade-up delay-4">
+                        <div class="why-choose-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div class="why-choose-text">
+                            <h4>Focus on Discipline & Values</h4>
+                            <p>Emphasis is placed on shaping not just the intellect, but the moral compass of every
+                                child we educate.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="logo.svg" alt="Katale Progressive Logo"
+                        style="height: 50px; margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
+                    <p>A growing educational institution committed to academics, discipline, and creativity.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academic Excellence</a></li>
+                        <li><a href="co-curricular.html">Co-Curriculars</a></li>
+                        <li><a href="contact.html">Contact Form</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li>📞 0764 155178</li>
+                        <li>📞 +256 787 455493</li>
+                        <li style="margin-top: 1rem;">📍 Jomayi Estate, Nalumunye</li>
+                        <li>Kampala, Uganda</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Katale Progressive Nursery and Primary School. All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
